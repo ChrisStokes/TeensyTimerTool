@@ -30,6 +30,7 @@ namespace TeensyTimerTool
 
         #elif defined(ARDUINO_TEENSY40) || defined(ARDUINO_TEENSY41)
             extern TimerGenerator *const TMR1, *const TMR2, *const TMR3, *const TMR4;
+            extern TimerGenerator *const TMR1_32, *const TMR2_32, *const TMR3_32, *const TMR4_32;
             extern TimerGenerator *const GPT1, *const GPT2;
             extern TimerGenerator *const PIT;
             extern TimerGenerator *const TCK;

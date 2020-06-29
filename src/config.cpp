@@ -11,10 +11,25 @@ using tick_t = void (*) ();
 
     namespace TeensyTimerTool
     {
-        TimerGenerator* const TMR1 = TMR_t<0>::getTimer;
-        TimerGenerator* const TMR2 = TMR_t<1>::getTimer;
-        TimerGenerator* const TMR3 = TMR_t<2>::getTimer;
-        TimerGenerator* const TMR4 = TMR_t<3>::getTimer;
+        TimerGenerator* const TMR1_16 = TMR_t<0>::getTimer16;
+        TimerGenerator* const TMR2_16 = TMR_t<1>::getTimer16;
+        TimerGenerator* const TMR3_16 = TMR_t<2>::getTimer16;
+        TimerGenerator* const TMR4_16 = TMR_t<3>::getTimer16;
+
+        TimerGenerator* const TMR1_32 = TMR_t<0>::getTimer32;
+        TimerGenerator* const TMR2_32 = TMR_t<1>::getTimer32;
+        TimerGenerator* const TMR3_32 = TMR_t<2>::getTimer32;
+        TimerGenerator* const TMR4_32 = TMR_t<3>::getTimer32;
+
+        TimerGenerator* const TMR1_64 = TMR_t<0>::getTimer64;
+        TimerGenerator* const TMR2_64 = TMR_t<1>::getTimer64;
+        TimerGenerator* const TMR3_64 = TMR_t<2>::getTimer64;
+        TimerGenerator* const TMR4_64 = TMR_t<3>::getTimer64;
+
+        TimerGenerator* const TMR1 = TMR1_16;  // 16bit is standard
+        TimerGenerator* const TMR2 = TMR2_16;
+        TimerGenerator* const TMR3 = TMR3_16;
+        TimerGenerator* const TMR4 = TMR4_16;
 
         TimerGenerator* const GPT1 = GPT_t<0>::getTimer;
         TimerGenerator* const GPT2 = GPT_t<1>::getTimer;
